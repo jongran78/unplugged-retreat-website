@@ -225,7 +225,67 @@ aside {
 .faq .content {
   flex-basis: 200px;
 }
+/* General Styles */
 
+main {
+  margin: 5%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content-wrapper {
+
+
+}
 /*------------------
  S  T  Y  L  E  S
 -------------------*/
