@@ -98,138 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Base Header - Footer Styles ---------------------------------------- */
-
-header,
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.header-divider {
-  width: 100%;
-}
-
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  margin: 0;
-}
-
-header nav {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 60%;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: space-around;
-  width: 60%;
-}
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-}
-
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: space-around;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Main Base Styles --------------------------------------------------------*/
-
-.hero-area {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  flex-flow: row wrap;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-}
-
-.features .features-item-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  flex-basis: 50px;
-  width: 60%;
-}
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-.reviews h3 {
-  width: 60%;
-}
-
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.faq .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.faq .content {
-  flex-basis: 200px;
-}
 /* General Styles */
-
-main {
-  margin: 5%;
-}
 
 html {
   font-size: 16px;
@@ -238,10 +107,12 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul, ol {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -251,18 +122,15 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
-h3 {
+h3, h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2em;
-
-}
-
-h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5em;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 20px;
 }
 
 p {
@@ -280,36 +148,255 @@ figure {
 
 address {
   font-family: 'Open Sans', sans-serif;
+  font-style: normal;
 }
 
 .content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+/* Base Header - Footer Styles ---------------------------------------- */
 
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #202322;
 
 }
-/*------------------
- S  T  Y  L  E  S
--------------------*/
-
-/* Header */
 
 header {
   padding: 15px 0;
 }
 
-/* Features */
-
-.features p {
-  margin: 0;
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
-/* Footer */
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+header nav ul li {
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 footer p {
   margin: 0;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* -----Mobile Styles --------------------------------------------------*/
+
+/* hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.hero-area .content-wrapper {
+  background-image: url('../Assets/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url('../Assets/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+}
+
+.hero-area h1 {
+  font-size: 2em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+
+}
+
+/* Aside */
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Features */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.features .features-item-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 50px;
+  width: 60%;
+}
+
+.features p {
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+/* ===========
+  / About Page /
+  ============*/
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section p {
+  margin: 0;
+}
+
+/* ============
+  / FAQ Page /
+  ============*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.faq .content {
+margin-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -403,66 +490,133 @@ footer p {
 @media only screen and (min-width: 768px) {
   /*Tablet styles*/
 
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+
+  /* Header */
+
   header {
-    justify-content: center;
+    justify-content: space-around;
+    padding: 30px 0;
   }
 
   header .content-wrapper {
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav ul {
-
-    justify-content: center;
+    justify-content: space-between;
   }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* Aside */
 
   aside .content-wrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-  }
-
-  .features article {
-
+    margin: 50px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-flow: row wrap;
   }
 
-  .reviews-article {
-    display: flex;
-    justify-content: center;
-  }
+  /* Features */
 
-  .footer-content {
+  .features article {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
   }
-}
 
-/* About Page 
+  /* Reviews */
+
+  .reviews-article {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+/* Footer */
+
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+/* ===================== 
+      About Page 
 ======================== */
   .mission-content {
     display: flex;
     Justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
 
   .mission-content p {
-    width: 80%;
+    width: 45%;
 }
   .contact-section .content-wrapper h2 {
     width: 80%;
 }
   .contact {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  /* FAQ Page 
+  .contact-section h4 {
+    font-size: 1.5em;
+  }
+
+  /* =============== 
+      FAQ Page 
   ================== */
 
   .faq .content-wrapper {
@@ -470,35 +624,64 @@ footer p {
 }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 
   .faq h2 {
     width: 100%;
   }
 
+  .faq h4,
+  .fap p {
+    font-size: .8em;
+    line-height: 1.1;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   /*Desktop styles*/
 
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  h3, h4 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.3em;
   }
 
   /* Hero Area */
   
   .hero-area h1 {
     width: 80%;
+    font-size: 3.75em;
   }
 
   /* Aside */
 
   aside .content-wrapper {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 80%;
+    width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.1em;
   }
 
   /* Features */
@@ -511,19 +694,31 @@ footer p {
     flex-basis: 40%;
   }
 
-  .reviews article div {
-    width: 80%;
+  /* Reviews */
+
+  .reviews h2 {
+    padding-bottom: 50px;
   }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  footer h4 {
+    font-size: 1.8em;
+  }
+
   /* About Page /
   ================== */
 
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 80%;
+    font-size: 3em;
   }
 
-  .contact-section .content-wrapper h2 {
-    margin-bottom: 10%;
+  .contact-content h4 {
+    font-size: 1.8em;
   }
 
   /* FAQ Page /
