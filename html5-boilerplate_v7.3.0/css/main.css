@@ -129,7 +129,7 @@ h2 {
 h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 p {
@@ -567,7 +567,7 @@ margin-bottom: 50px;
   }
 
   header nav {
-    width: 20%;
+    width: 30%;
   }
   header nav ul {
     justify-content: space-between;
@@ -739,10 +739,13 @@ margin-bottom: 50px;
     width: 100%;
   }
 
-  .faq h4,
+  .faq h4 {
+    font-size: 1.5em;
+  }
   .fap p {
     font-size: .8em;
     line-height: 1.1;
+    
   }
 }
 
@@ -855,6 +858,7 @@ margin-bottom: 50px;
   .contact-content h4 {
     font-size: 1.8em;
   }
+  
 
   /* =========================
     / FAQ Page /
@@ -867,10 +871,11 @@ margin-bottom: 50px;
 
   .faq h4,
   .faq p {
-    font-size: 1.1em;
-    line-height: 1;
+    font-size: 1.em;
+    line-height: 1.5;
   
   }
+  
 }
 
 
